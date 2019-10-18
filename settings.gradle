@@ -1,0 +1,2 @@
+include ':app', ':baselibrary', ':appfake'
+rootProject.name='ModuleInvoke'
