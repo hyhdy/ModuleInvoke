@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.hyh.baselibrary.inoneinvoke.CreateTips;
+import com.hyh.baselibrary.inoneinvoke.CreateTipsProxy;
 import com.hyh.moduleinvoke.MyInvoke;
 
 public class SecondActivity extends AppCompatActivity {
@@ -21,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
         textView.setText(myInvoke.getStr());
 
         TextView textView2 = findViewById(R.id.tv_text2);
-        CreateTips createTips = new CreateTips();
-        textView2.setText(createTips.getStr());
+        CreateTipsProxy createTipsProxy = new CreateTipsProxy();
+        textView2.setText(createTipsProxy.getStr());
     }
 }
